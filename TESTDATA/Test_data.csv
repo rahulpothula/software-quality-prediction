@@ -1,0 +1,39 @@
+﻿QualifiedName,Name,Coupling,Size,Lack of Cohesion,CBO,RFC,SRFC,DIT,NOC,WMC,LOC,CMLOC,NOF,NOSF,NOM,NOSM,NORM,LCOM,LCAM,LTCC,ATFD,SI,#(C&I),#C,#I,LOC,AC,EC,Abs,Ins,ND,WMC,MCC,NBD,LOC,#Pa,#MC,#AF
+spring-framework-2015-6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Package>,,low,low,low,,,,,,1,2,,,,,,,,,,,,1,1,0,2,0,0,0,1,0,1,,,,,,
+Null,Null,low,low,low,0,1,0,1,0,1,2,1,0,0,1,0,0,0,0,0,0,0,,,,2,,,,,,1,,,,,,
+<Method>Null.public Null( ): void,Null( ): void,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,0,0,0
+<Package>org.springframework.aop,org.springframework.aop,low,medium-high,low,,,,,,44,102,,,,,,,,,,,,24,4,20,102,92,1,0.833,0.011,0.156,44,,,,,,
+org.springframework.aop.Advisor,Advisor,low,low,low,0,1,0,1,3,2,3,1,0,0,1,0,0,0,0,0,0,0,,,,3,,,,,,2,,,,,,
+<Method>org.springframework.aop.Advisor.public abstract isPerInstance( ): boolean,isPerInstance( ): boolean,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,0,0,0
+org.springframework.aop.AfterAdvice,AfterAdvice,low,low,low,0,0,0,1,7,0,1,0,0,0,0,0,0,0,0,0,0,0,,,,1,,,,,,0,,,,,,
+org.springframework.aop.AfterReturningAdvice,AfterReturningAdvice,low,low,low,0,1,0,1,1,1,2,1,0,0,1,0,0,0,0,0,0,0,,,,2,,,,,,1,,,,,,
+"<Method>org.springframework.aop.AfterReturningAdvice.public abstract afterReturning( Object, Method, Object, Object ): void","afterReturning( Object, Method, Object, Object ): void",low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,4,0,0
+org.springframework.aop.AopInvocationException,AopInvocationException,low,low,low,0,2,0,5,0,2,6,4,0,0,2,0,0,0,0.167,0,0,0,,,,6,,,,,,2,,,,,,
+<Method>org.springframework.aop.AopInvocationException.public AopInvocationException( String ): void,AopInvocationException( String ): void,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,0,0
+"<Method>org.springframework.aop.AopInvocationException.public AopInvocationException( String, Throwable ): void","AopInvocationException( String, Throwable ): void",low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,2,0,0
+org.springframework.aop.BeforeAdvice,BeforeAdvice,low,low,low,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,,,,1,,,,,,0,,,,,,
+org.springframework.aop.ClassFilter,ClassFilter,low,low,low,0,1,0,1,10,1,3,1,0,1,1,0,0,0,0,0,0,0,,,,3,,,,,,1,,,,,,
+<Method>org.springframework.aop.ClassFilter.public abstract matches( Class ): boolean,matches( Class ): boolean,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,1,0,0
+<Field>org.springframework.aop.ClassFilter->TRUE,static final TRUE : ClassFilter,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+org.springframework.aop.DynamicIntroductionAdvice,DynamicIntroductionAdvice,low,low,low,0,1,0,1,1,1,2,1,0,0,1,0,0,0,0,0,0,0,,,,2,,,,,,1,,,,,,
+<Method>org.springframework.aop.DynamicIntroductionAdvice.public abstract implementsInterface( Class ): boolean,implementsInterface( Class ): boolean,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,1,0,0
+org.springframework.aop.IntroductionAdvisor,IntroductionAdvisor,low,low,low,1,2,0,1,2,2,3,2,0,0,2,0,0,0,0,0,0,0,,,,3,,,,,,2,,,,,,
+<Method>org.springframework.aop.IntroductionAdvisor.public abstract getClassFilter( ): ClassFilter,getClassFilter( ): ClassFilter,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,0,0,0
+<Method>org.springframework.aop.IntroductionAdvisor.public abstract validateInterfaces( ): void,validateInterfaces( ): void,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,0,0,0
+org.springframework.aop.IntroductionAwareMethodMatcher,IntroductionAwareMethodMatcher,low,low,low,0,1,0,1,3,1,2,1,0,0,1,0,0,0,0,0,0,0,,,,2,,,,,,1,,,,,,
+"<Method>org.springframework.aop.IntroductionAwareMethodMatcher.public abstract matches( Method, Class, boolean ): boolean","matches( Method, Class, boolean ): boolean",low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,3,0,0
+org.springframework.aop.IntroductionInfo,IntroductionInfo,low,low,low,0,1,0,1,2,1,2,1,0,0,1,0,0,0,0,0,0,0,,,,2,,,,,,1,,,,,,
+<Method>org.springframework.aop.IntroductionInfo.public abstract getInterfaces( ): Class,getInterfaces( ): Class,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,0,0,0
+org.springframework.aop.IntroductionInterceptor,IntroductionInterceptor,low,low,low,0,0,0,1,2,0,1,0,0,0,0,0,0,0,0,0,0,0,,,,1,,,,,,0,,,,,,
+org.springframework.aop.MethodBeforeAdvice,MethodBeforeAdvice,low,low,low,0,1,0,1,2,1,2,1,0,0,1,0,0,0,0,0,0,0,,,,2,,,,,,1,,,,,,
+"<Method>org.springframework.aop.MethodBeforeAdvice.public abstract before( Method, Object, Object ): void","before( Method, Object, Object ): void",low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,3,0,0
+org.springframework.aop.MethodMatcher,MethodMatcher,low,low,low,0,3,0,1,5,3,5,3,0,1,3,0,0,0,0.333,1,0,0,,,,5,,,,,,3,,,,,,
+<Method>org.springframework.aop.MethodMatcher.public abstract isRuntime( ): boolean,isRuntime( ): boolean,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,0,0,0
+"<Method>org.springframework.aop.MethodMatcher.public abstract matches( Method, Class ): boolean","matches( Method, Class ): boolean",low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,2,0,0
+"<Method>org.springframework.aop.MethodMatcher.public abstract matches( Method, Class, Object ): boolean","matches( Method, Class, Object ): boolean",low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,3,0,0
+<Field>org.springframework.aop.MethodMatcher->TRUE,static final TRUE : MethodMatcher,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+org.springframework.aop.Pointcut,Pointcut,low,low,low,2,2,0,1,7,2,4,2,0,1,2,0,0,0,0,1,0,0,,,,4,,,,,,2,,,,,,
+<Method>org.springframework.aop.Pointcut.public abstract getClassFilter( ): ClassFilter,getClassFilter( ): ClassFilter,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,0,0,0
+<Method>org.springframework.aop.Pointcut.public abstract getMethodMatcher( ): MethodMatcher,getMethodMatcher( ): MethodMatcher,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,0,0,0
+<Field>org.springframework.aop.Pointcut->TRUE,static final TRUE : Pointcut,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
